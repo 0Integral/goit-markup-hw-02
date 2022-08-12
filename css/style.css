@@ -1,7 +1,167 @@
+:root {
+  --background-site: #f5f5f5;
+  --background-team-card: #fff;
+  --color-main-text: #212121;
+  --color-sub-text: #757575;
+  --color-accent: #2196f3;
+  --text: #fff;
+  --act-button: #188ce8;
+  --command-back: #f5f4fa;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list-style {
+  list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
+  color: var(--color-main-text);
+}
+
+a {
+  color: inherit;
 }
 
 button {
   cursor: pointer;
+  font-family: inherit;
+}
+
+/* header */
+.accent {
+  color: var(--color-accent);
+}
+
+.header__logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.menu-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.menu-item:hover,
+.menu-item:focus {
+  color: var(--color-accent);
+}
+
+.menu-info {
+  color: var(--color-sub-text);
+}
+
+.menu-info-item:hover,
+.menu-info-item:focus {
+  color: var(--color-accent);
+}
+
+.hero {
+  background-color: #757575;
+}
+
+.hero > h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--text);
+  background-color: var(--color-accent);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background: var(--act-button);
+}
+
+.advantages h2 {
+}
+
+.advantages h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-main-text);
+}
+
+.advantages-item p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-sub-text);
+}
+
+.doing > h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.31;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-main-text);
+}
+
+.command {
+  background-color: var(--command-back);
+}
+
+.command-item {
+  background-color: var(--background-team-card);
+  width: 270px;
+  height: 368px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.command-item h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-main-text);
+}
+
+.command-item p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-sub-text);
 }
