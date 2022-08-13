@@ -6,6 +6,7 @@
   --color-sub-text: #757575;
   --color-accent: #2196f3;
   --text: #fff;
+  --logo-color: #000000;
   --act-button: #188ce8;
   --command-back: #f5f4fa;
   --footer-back: #2f303a;
@@ -35,7 +36,10 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  color: var(--background-site);
+  background-color: var(--background-site);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--color-main-text);
 }
 
 a {
@@ -57,38 +61,40 @@ button {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  color: var(--logo-color);
 }
 
-.menu .link.current {
+.current {
   color: var(--color-accent);
 }
 
-.menu-item {
+.menu-item-text {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
 
 .menu-item:hover,
-.menu-item:focus {
+.menu-item:focus,
+.contact-item:hover,
+.contact-item:focus,
+.footer-contact-item:hover,
+.footer-contact-item:focus {
   color: var(--color-accent);
 }
 
-.menu-info {
+.contact-item {
   color: var(--color-sub-text);
-}
-
-.menu-info-item:hover,
-.menu-info-item:focus {
-  color: var(--color-accent);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .hero {
   background-color: var(--backfround-hero);
 }
 
-.hero > h1 {
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -114,30 +120,21 @@ button {
   background: var(--act-button);
 }
 
-.advantages h3 {
-  font-weight: 700;
-  font-size: 14px;
+.advantages-titel {
   line-height: 1.2;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--color-main-text);
 }
 
-.advantages-item p {
-  font-weight: 400;
-  font-size: 14px;
+.advantages-item-info {
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--color-sub-text);
 }
 
-.doing > h2 {
+.section-titel {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.31;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--color-main-text);
 }
 
 .command {
@@ -152,21 +149,18 @@ button {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.command-item h3 {
+.command-item-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--color-main-text);
 }
 
-.command-item p {
-  font-weight: 400;
+.command-item-position {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.03em;
+
   color: var(--color-sub-text);
 }
 
@@ -174,39 +168,39 @@ footer {
   background-color: var(--footer-back);
 }
 
-.footer-info {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+.white {
+  color: var(--text);
+}
+
+address {
   font-style: normal;
 }
 
 .address-item-map {
   color: var(--text);
+  line-height: 2;
 }
 
-.address-item-mail {
+.footer-contact-item {
   color: var(--footer-info);
-}
-
-.address-item-tel {
-  color: var(--footer-info);
+  line-height: 1.71;
 }
 
 /* portfolio */
-
-.choose-project-item button {
+.choose-project-button {
   background-color: var(--command-back);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--color-main-text);
+}
+.current-button {
+  color: var(--text);
+  background-color: var(--color-accent);
 }
 
-.choose-project-item button:hover,
-.choose-project-item button:active {
+.choose-project-button:hover,
+.choose-project-button:active {
   background-color: var(--color-accent);
   color: var(--text);
 }
@@ -216,17 +210,14 @@ footer {
   height: 404px;
 }
 
-.project-galary-item h2 {
-  font-weight: 700;
+.project-galary-titel {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--color-main-text);
 }
 
-.project-galary-item p {
+.project-galary-text {
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
   color: var(--color-sub-text);
 }
